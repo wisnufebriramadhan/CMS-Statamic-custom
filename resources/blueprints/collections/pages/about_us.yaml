@@ -1,0 +1,104 @@
+title: 'About Us'
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: show_heading
+            field:
+              default: true
+              type: toggle
+              display: 'Show heading'
+          -
+            handle: heading
+            field:
+              type: text
+              display: Heading
+              validate:
+                - required
+              if:
+                show_heading: 'equals true'
+          -
+            handle: page_desc
+            field:
+              buttons:
+                - h2
+                - h3
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - removeformat
+                - quote
+                - anchor
+                - image
+                - table
+                - h1
+                - h4
+                - h5
+                - h6
+                - alignleft
+                - aligncenter
+                - alignright
+                - alignjustify
+              save_html: true
+              remove_empty_nodes: false
+              type: bard
+              display: 'Page Desc'
+              validate:
+                - required
+          -
+            handle: hero_image
+            field:
+              max_files: 1
+              min_files: 1
+              container: assets
+              type: assets
+              display: 'Hero Image'
+              validate:
+                - required
+                - image
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - pages
+              max_items: 1
+              listable: false
+              localizable: true
+          -
+            handle: template
+            field:
+              type: template
+              display: Template
+              validate:
+                - required
+  seo:
+    display: SEO
+    sections:
+      -
+        display: SEO
+        fields:
+          -
+            import: seo

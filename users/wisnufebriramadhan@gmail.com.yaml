@@ -1,0 +1,15 @@
+name: 'Wisnu Febri'
+super: true
+id: 29da1925-cd89-477d-99f9-5152e301551d
+password_hash: $2y$12$.DIXuQVxkQsvbIoQ99rJ1O/1TkNLXZWDPw9WPq0UyfEhApUzHLB7u
+preferences:
+  theme: light
+  collections:
+    pages:
+      after_save: continue_editing
+  taxonomies:
+    category_blog:
+      filters:
+        magazines:
+          display: Magazines
+          query: Magazine

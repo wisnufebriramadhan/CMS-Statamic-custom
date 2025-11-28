@@ -1,0 +1,6 @@
+from: /home-admin
+to: /
+redirect_type: '301'
+sites:
+  - default
+id: 692896e4ad306

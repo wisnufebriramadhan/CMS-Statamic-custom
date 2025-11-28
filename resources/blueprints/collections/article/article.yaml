@@ -1,0 +1,97 @@
+title: Article
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: content
+            field:
+              buttons:
+                - h2
+                - h3
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - removeformat
+                - quote
+                - anchor
+                - image
+                - table
+                - h1
+                - h4
+                - h5
+                - h6
+                - underline
+                - alignleft
+                - aligncenter
+                - alignright
+                - alignjustify
+              save_html: true
+              remove_empty_nodes: false
+              container: assets
+              type: bard
+              display: Content
+              validate:
+                - required
+          -
+            handle: author
+            field:
+              type: users
+              display: Author
+              default:
+                - 29da1925-cd89-477d-99f9-5152e301551d
+              localizable: true
+              max_items: 1
+          -
+            handle: template
+            field:
+              type: template
+              display: Template
+              localizable: true
+              folder: pages/article
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: date
+            field:
+              type: date
+              required: true
+              default: now
+              validate:
+                - required
+          -
+            handle: category_blog
+            field:
+              type: terms
+              taxonomies:
+                - category_blog
+              display: 'Category Blog'
+              mode: select
+              max_items: 1
+  seo:
+    display: SEO
+    sections:
+      -
+        display: 'New Section'
+        fields:
+          -
+            import: seo
