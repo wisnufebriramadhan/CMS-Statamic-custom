@@ -1,49 +1,53 @@
 <!doctype html>
 <html lang="{{ site:short_locale }}">
-    <head>
-        <meta charset="utf-8">
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <title>Welcome to - Torucorp.</title>
-        <meta name="description" content="">
-        <meta name="keywords" content="">
 
-        <!-- Favicons -->
-        <link href="/assets/img/toru-icon.png" rel="icon">
-        <link href="/assets/img/toru-icon.png" rel="apple-touch-icon">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Welcome to - Torucorp.</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com" rel="preconnect">
-        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-            rel="stylesheet">
+    <!-- Favicons -->
+    <link href="/assets/img/toru-icon.png" rel="icon">
+    <link href="/assets/img/toru-icon.png" rel="apple-touch-icon">
 
-        <!-- Vendor CSS Files -->
-        <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-        <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
-        <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-        <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
-        <!-- Main CSS File (cache-buster untuk testing) -->
-        <link href="/assets/css/main.css" rel="stylesheet">
-        <title>{{ title ?? site:name }}</title>
-        {{ vite src="resources/css/tailwind.css|resources/js/site.js" }}
-        {{ livewire:styles }}
-        <!-- Template info -->
-    </head>
-    <body class="index-page">
-          {{ livewire:Component.Header }}
+    <!-- Vendor CSS Files -->
+    <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Main CSS File (cache-buster untuk testing) -->
+    <link href="/assets/css/main.css" rel="stylesheet">
+    <!-- <link href="/assets/css/header.css" rel="stylesheet"> -->
+    <link href="/assets/css/footer.css" rel="stylesheet">
+    <title>{{ title ?? site:name }}</title>
+    {{ vite src="resources/css/tailwind.css|resources/js/site.js" }}
+    {{ livewire:styles }}
+    <!-- Template info -->
+</head>
+
+<body class="index-page">
+    {{ livewire:Component.Header }}
 
     <div class="flex flex-col items-center justify-center px-2 mx-auto lg:min-h-screen">
-            {{ template_content }}
-        </div>
-      {{ livewire:scripts }}
-        {{ livewire:Component.Footer }}
+        {{ template_content }}
+    </div>
+    {{ livewire:scripts }}
+    {{ livewire:Component.Footer }}
 
     <!-- Scroll Top -->
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-        class="bi bi-arrow-up-short"></i></a>
+            class="bi bi-arrow-up-short"></i></a>
 
     <!-- Vendor JS Files -->
     <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -55,7 +59,14 @@
     <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
 
+    <!-- Bootstrap & AOS scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
     <!-- Main JS File (cache-buster) -->
     <script src="/assets/js/main.js"></script>
-    </body>
+    <script src="/assets/js/custom.js"></script>
+
+</body>
+
 </html>

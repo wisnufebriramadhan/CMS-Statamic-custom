@@ -1,0 +1,95 @@
+title: 'Torucorp Businesses'
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+              display: Title
+          -
+            handle: show_heading
+            field:
+              type: toggle
+              display: 'Show Heading'
+          -
+            handle: heading
+            field:
+              type: text
+              display: Heading
+              validate:
+                - required
+          -
+            handle: page_desc
+            field:
+              buttons:
+                - h2
+                - h3
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - removeformat
+                - quote
+                - anchor
+                - image
+                - table
+                - h1
+                - h4
+                - h5
+                - h6
+                - alignleft
+                - aligncenter
+                - alignright
+                - alignjustify
+              save_html: true
+              remove_empty_nodes: false
+              type: bard
+              display: 'Page Desc'
+              validate:
+                - required
+          -
+            handle: hero_image
+            field:
+              container: assets
+              type: assets
+              display: 'Hero Image'
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - pages
+              max_items: 1
+              listable: false
+              localizable: true
+          -
+            handle: template
+            field:
+              type: template
+              display: Template
+  seo:
+    display: SEO
+    sections:
+      -
+        display: SEO
+        fields:
+          -
+            import: seo

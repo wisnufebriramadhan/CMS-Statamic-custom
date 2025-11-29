@@ -1140,7 +1140,7 @@ section,
   color: var(--accent-color);
   line-height: 0;
   padding: 4px;
-  margin-right: 10px;
+  margin-right: 0px;
   font-size: 24px;
   border-radius: 3px;
   transition: 0.3s;

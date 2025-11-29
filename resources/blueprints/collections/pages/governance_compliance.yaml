@@ -1,0 +1,66 @@
+title: 'Governance & Compliance'
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: show_heading
+            field:
+              type: toggle
+              display: 'Show Heading'
+          -
+            handle: heading
+            field:
+              type: text
+              display: Heading
+              validate:
+                - required
+          -
+            handle: page_desc
+            field:
+              type: text
+              display: 'Page Desc'
+              validate:
+                - required
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - pages
+              max_items: 1
+              listable: false
+              localizable: true
+          -
+            handle: template
+            field:
+              type: template
+              display: Template
+  seo:
+    display: SEO
+    sections:
+      -
+        display: SEO
+        fields:
+          -
+            import: seo
