@@ -1,23 +1,100 @@
- <!-- Hero Section -->
-  <section id="hero" class="hero section">
-    <div class="container">
-      <div class="row gy-4">
-        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-          <h1 data-aos="fade-up">Torucorp.</h1>
-          <h1 data-aos="fade-up">Build The Dignity</h1>
-          <p data-aos="fade-up" data-aos-delay="100">Building a Dignified Legacy with <br>Digital Innovation and Sharia
-            Integrity</p>
-          <!-- <div class="d-flex flex-column flex-md-row" data-aos="fade-up" data-aos-delay="200">
-            <a href="#about" class="btn-get-started">Get Started <i class="bi bi-arrow-right"></i></a>
-            <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
-              class="glightbox btn-watch-video d-flex align-items-center justify-content-center ms-0 ms-md-4 mt-4 mt-md-0"><i
-                class="bi bi-play-circle"></i><span>Watch Video</span></a>
-          </div> -->
-        </div>
-        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out">
-          <img src="/assets/img/hero-img.png" class="img-fluid animated" alt="Hero illustration">
-        </div>
+<!-- ================= HERO SECTION ================= -->
+<style>
+  /* RESET GLOBAL (WAJIB) */
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* HERO BASE */
+  .hero-video {
+    position: relative;
+    width: 100vw;
+    /* ⬅️ PENTING */
+    min-height: 100vh;
+    overflow: hidden;
+    color: #fff;
+    padding: 0;
+    /* ⬅️ hilangkan padding section */
+  }
+
+  /* VIDEO BACKGROUND */
+  .hero-bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    /* ⬅️ full viewport */
+    height: 100vh;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+
+  /* OVERLAY */
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 2;
+  }
+
+  /* CONTENT WRAPPER */
+  .hero-video .container {
+    position: relative;
+    z-index: 3;
+    max-width: 1320px;
+    /* tetap rapi di desktop */
+    padding-left: 24px;
+    /* custom padding */
+    padding-right: 24px;
+  }
+
+  .hero-video h1,
+  .hero-video p {
+    color: #fff;
+  }
+
+  /* MOBILE FIX */
+  @media (max-width: 768px) {
+    .hero-video {
+      min-height: 100vh;
+    }
+
+    .hero-bg-video {
+      width: 100%;
+      height: 100%;
+    }
+  }
+</style>
+
+<section id="hero" class="hero section hero-video">
+
+  <!-- Video Background -->
+  <video autoplay muted loop playsinline class="hero-bg-video">
+    <source src="https://www.torucorp.id/assets/torucorp-asset-home.mp4" type="video/mp4">
+    Browser Anda tidak mendukung video.
+  </video>
+
+  <!-- Overlay -->
+  <div class="hero-overlay"></div>
+
+  <!-- Content -->
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-6 d-flex flex-column justify-content-center">
+        <h1 data-aos="fade-up">Torucorp.</h1>
+        <h1 data-aos="fade-up">Build The Dignity</h1>
+        <p data-aos="fade-up" data-aos-delay="100">
+          Building a Dignified Legacy with <br>
+          Digital Innovation and Sharia Integrity
+        </p>
       </div>
     </div>
-  </section><!-- /Hero Section -->
+  </div>
 
+</section>
+<!-- =============== /HERO SECTION ================= -->

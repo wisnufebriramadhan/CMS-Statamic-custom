@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Welcome to - Torucorp.</title>
+    <!-- <title>Welcome to - Torucorp.</title> -->
     <meta name="description" content="">
     <meta name="keywords" content="">
 
@@ -28,8 +28,8 @@
 
     <!-- Main CSS File (cache-buster untuk testing) -->
     <link href="/assets/css/main.css" rel="stylesheet">
-    <!-- <link href="/assets/css/header.css" rel="stylesheet"> -->
-    <link href="/assets/css/footer.css" rel="stylesheet">
+    <link href="/assets/css/custom.css" rel="stylesheet">
+    <link href="/assets/css/header.css" rel="stylesheet">
     <title>{{ title ?? site:name }}</title>
     {{ vite src="resources/css/tailwind.css|resources/js/site.js" }}
     {{ livewire:styles }}
@@ -66,6 +66,7 @@
     <!-- Main JS File (cache-buster) -->
     <script src="/assets/js/main.js"></script>
     <script src="/assets/js/custom.js"></script>
+    <!-- <script src="/assets/js/residential.js"></script> -->
 
 </body>
 

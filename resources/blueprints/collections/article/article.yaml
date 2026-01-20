@@ -13,6 +13,16 @@ tabs:
               validate:
                 - required
           -
+            handle: image_artikel
+            field:
+              max_files: 1
+              min_files: 1
+              container: assets
+              type: assets
+              display: 'Image Artikel'
+              validate:
+                - required
+          -
             handle: content
             field:
               buttons:
