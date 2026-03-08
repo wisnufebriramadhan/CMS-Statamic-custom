@@ -89,7 +89,7 @@
                   <div class="col">
                     <div class="row">
                       <div class="col-md-5 text-center py-3">
-                        <img src="/assets/img/hero-img.png" class="img-fluid animated img-cons" alt="Construction" />
+                        <img src="/assets/construction-illustration.svg" class="img-fluid animated img-cons" alt="Construction" />
                       </div>
 
                       <div class="col-md-7 py-3">
@@ -125,7 +125,7 @@
                   <div class="col">
                     <div class="row">
                       <div class="col-md-5 text-center py-3">
-                        <img src="/assets/img/hero-img.png" class="img-fluid animated img-cons" alt="Teras Depan" />
+                        <img src="/assets/teras-depan-illustration.svg" class="img-fluid animated img-cons" alt="Teras Depan" />
                       </div>
 
                       <div class="col-md-7 py-3">
@@ -161,7 +161,7 @@
                   <div class="ai-card col">
                     <div class="row">
                       <div class="col text-center py-3">
-                        <img src="/assets/img/hero-img.png" class="img-fluid animated" alt="Hero image" />
+                        <img src="/assets/ai-solution-illustration.svg" class="img-fluid animated" alt="AI Solution" />
                       </div>
                       <div class="col py-3">
                         <h2 class="ai-title">Academy of AI</h2>
@@ -178,7 +178,7 @@
                   <div class="ai-card col">
                     <div class="row">
                       <div class="col text-center py-3">
-                        <img src="/assets/img/hero-img.png" class="img-fluid animated" alt="Hero image" />
+                        <img src="/assets/ai-solution-illustration.svg" class="img-fluid animated" alt="Hero image" />
                       </div>
                       <div class="col py-3">
                         <h2 class="ai-title">Viralin</h2>
@@ -195,11 +195,11 @@
               </div>
             </ul>
           </li>
-          <li><a href="#services">Digital Solution</a></li>
-          <li><a href="/blog.html">Spotlight Magazine</a></li>
+          <li><a href="/digital-solution">Digital Solution</a></li>
+          <li><a href="/article">Spotlight Magazine</a></li>
           <li><a href="#team">Open Collaboration</a></li>
           <li><a href="/">Career</a></li>
-          <li><a href="/admin">Whistleblowing</a></li>
+          <li><a href="/whistleblowing">Whistleblowing</a></li>
           {{-- <li class="listing-dropdown">
             <a href="#"><span>Menu Sampel</span>
               <i class="bi bi-chevron-down toggle-dropdown"></i></a>

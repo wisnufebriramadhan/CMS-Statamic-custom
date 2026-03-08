@@ -1,0 +1,57 @@
+<svg id="construction-illustration" width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="constructionGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0.1" />
+    </linearGradient>
+    <linearGradient id="constructionGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="200" cy="150" r="140" fill="url(#constructionGrad1)"/>
+  
+  <!-- Main building -->
+  <rect x="140" y="80" width="120" height="180" rx="8" fill="url(#constructionGrad2)"/>
+  
+  <!-- Windows pattern -->
+  <g opacity="0.9">
+    <rect x="155" y="100" width="25" height="30" rx="4" fill="white" opacity="0.3"/>
+    <rect x="190" y="100" width="25" height="30" rx="4" fill="white" opacity="0.3"/>
+    <rect x="225" y="100" width="25" height="30" rx="4" fill="white" opacity="0.3"/>
+    
+    <rect x="155" y="145" width="25" height="30" rx="4" fill="white" opacity="0.3"/>
+    <rect x="190" y="145" width="25" height="30" rx="4" fill="white" opacity="0.3"/>
+    <rect x="225" y="145" width="25" height="30" rx="4" fill="white" opacity="0.3"/>
+    
+    <rect x="155" y="190" width="25" height="30" rx="4" fill="white" opacity="0.3"/>
+    <rect x="190" y="190" width="25" height="30" rx="4" fill="white" opacity="0.3"/>
+    <rect x="225" y="190" width="25" height="30" rx="4" fill="white" opacity="0.3"/>
+  </g>
+  
+  <!-- Side building left -->
+  <rect x="80" y="130" width="50" height="130" rx="6" fill="#3b82f6" opacity="0.6"/>
+  <rect x="90" y="145" width="12" height="15" rx="2" fill="white" opacity="0.25"/>
+  <rect x="112" y="145" width="12" height="15" rx="2" fill="white" opacity="0.25"/>
+  <rect x="90" y="170" width="12" height="15" rx="2" fill="white" opacity="0.25"/>
+  <rect x="112" y="170" width="12" height="15" rx="2" fill="white" opacity="0.25"/>
+  
+  <!-- Side building right -->
+  <rect x="270" y="110" width="60" height="150" rx="6" fill="#1d4ed8" opacity="0.7"/>
+  <rect x="282" y="125" width="15" height="18" rx="2" fill="white" opacity="0.25"/>
+  <rect x="305" y="125" width="15" height="18" rx="2" fill="white" opacity="0.25"/>
+  <rect x="282" y="155" width="15" height="18" rx="2" fill="white" opacity="0.25"/>
+  <rect x="305" y="155" width="15" height="18" rx="2" fill="white" opacity="0.25"/>
+  
+  <!-- Crane -->
+  <line x1="300" y1="60" x2="300" y2="110" stroke="#2563eb" stroke-width="3"/>
+  <line x1="300" y1="60" x2="340" y2="60" stroke="#2563eb" stroke-width="3"/>
+  <line x1="340" y1="60" x2="340" y2="80" stroke="#3b82f6" stroke-width="2"/>
+  <rect x="337" y="80" width="6" height="12" fill="#2563eb"/>
+  
+  <!-- Ground line -->
+  <rect x="50" y="260" width="300" height="3" fill="#2563eb" opacity="0.3" rx="1.5"/>
+</svg>

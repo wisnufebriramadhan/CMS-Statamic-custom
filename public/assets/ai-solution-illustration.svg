@@ -1,0 +1,73 @@
+<svg id="ai-solution-illustration" width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="aiGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0.15" />
+    </linearGradient>
+    <linearGradient id="aiGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circles -->
+  <circle cx="200" cy="150" r="130" fill="url(#aiGrad1)"/>
+  
+  <!-- Neural network nodes -->
+  <g opacity="0.8">
+    <!-- Layer 1 -->
+    <circle cx="100" cy="100" r="12" fill="url(#aiGrad2)"/>
+    <circle cx="100" cy="150" r="12" fill="url(#aiGrad2)"/>
+    <circle cx="100" cy="200" r="12" fill="url(#aiGrad2)"/>
+    
+    <!-- Layer 2 -->
+    <circle cx="200" cy="80" r="14" fill="url(#aiGrad2)"/>
+    <circle cx="200" cy="150" r="14" fill="url(#aiGrad2)"/>
+    <circle cx="200" cy="220" r="14" fill="url(#aiGrad2)"/>
+    
+    <!-- Layer 3 -->
+    <circle cx="300" cy="100" r="12" fill="url(#aiGrad2)"/>
+    <circle cx="300" cy="150" r="12" fill="url(#aiGrad2)"/>
+    <circle cx="300" cy="200" r="12" fill="url(#aiGrad2)"/>
+  </g>
+  
+  <!-- Connections -->
+  <g opacity="0.3" stroke="#2563eb" stroke-width="2">
+    <line x1="112" y1="100" x2="186" y2="80"/>
+    <line x1="112" y1="100" x2="186" y2="150"/>
+    <line x1="112" y1="150" x2="186" y2="80"/>
+    <line x1="112" y1="150" x2="186" y2="150"/>
+    <line x1="112" y1="150" x2="186" y2="220"/>
+    <line x1="112" y1="200" x2="186" y2="150"/>
+    <line x1="112" y1="200" x2="186" y2="220"/>
+    
+    <line x1="214" y1="80" x2="288" y2="100"/>
+    <line x1="214" y1="80" x2="288" y2="150"/>
+    <line x1="214" y1="150" x2="288" y2="100"/>
+    <line x1="214" y1="150" x2="288" y2="150"/>
+    <line x1="214" y1="150" x2="288" y2="200"/>
+    <line x1="214" y1="220" x2="288" y2="150"/>
+    <line x1="214" y1="220" x2="288" y2="200"/>
+  </g>
+  
+  <!-- Brain icon in center -->
+  <g transform="translate(170, 120)">
+    <path d="M 30 15 Q 35 5 45 10 Q 50 0 55 10 Q 60 5 60 15 Q 65 20 60 30 Q 60 40 50 45 Q 40 50 30 45 Q 20 40 20 30 Q 15 20 20 15 Q 20 5 30 15 Z" 
+          fill="white" opacity="0.9" stroke="#2563eb" stroke-width="2"/>
+    <circle cx="35" cy="25" r="3" fill="#2563eb"/>
+    <circle cx="45" cy="25" r="3" fill="#2563eb"/>
+    <path d="M 32 35 Q 40 38 48 35" stroke="#2563eb" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Floating particles -->
+  <circle cx="80" cy="80" r="4" fill="#3b82f6" opacity="0.6"/>
+  <circle cx="320" cy="100" r="5" fill="#8b5cf6" opacity="0.5"/>
+  <circle cx="340" cy="200" r="4" fill="#2563eb" opacity="0.6"/>
+  <circle cx="60" cy="220" r="5" fill="#3b82f6" opacity="0.5"/>
+  
+  <!-- Data flow lines -->
+  <g opacity="0.4" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="4 4">
+    <path d="M 50 150 Q 100 130 150 150" fill="none"/>
+    <path d="M 250 150 Q 300 170 350 150" fill="none"/>
+  </g>
+</svg>
