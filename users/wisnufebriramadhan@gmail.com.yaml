@@ -13,3 +13,6 @@ preferences:
         magazines:
           display: Magazines
           query: Magazine
+  assets:
+    assets:
+      mode: grid

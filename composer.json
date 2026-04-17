@@ -14,6 +14,7 @@
         "alt-design/alt-redirect": "^1.6",
         "laravel/framework": "^12.0",
         "laravel/tinker": "^2.10.1",
+        "livewire/livewire": "^3.7",
         "marcorieser/statamic-livewire": "^5.0",
         "spatie/fork": "^1.2",
         "statamic/cms": "^5.0",

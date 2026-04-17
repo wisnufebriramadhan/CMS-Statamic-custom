@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <!-- Light blue-gray gradient -->
+    <linearGradient id="bgLight" x1="0%" y1="0%" x2="10%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8eef9;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#edf2fb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#dde6f5;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Top center soft glow -->
+    <radialGradient id="topGlow" cx="50%" cy="0%" r="60%">
+      <stop offset="0%" style="stop-color:#a8c4f0;stop-opacity:0.25" />
+      <stop offset="100%" style="stop-color:#e8eef9;stop-opacity:0" />
+    </radialGradient>
+
+    <!-- Top-left large circle glow -->
+    <radialGradient id="leftGlow" cx="0%" cy="0%" r="50%">
+      <stop offset="0%" style="stop-color:#b8d0f5;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#e8eef9;stop-opacity:0" />
+    </radialGradient>
+
+    <!-- Subtle grid pattern -->
+    <pattern id="lightGrid" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="60" y2="0" stroke="#c8d8ee" stroke-width="0.4" opacity="0.5"/>
+      <line x1="0" y1="0" x2="0" y2="60" stroke="#c8d8ee" stroke-width="0.4" opacity="0.5"/>
+    </pattern>
+
+    <!-- Dot pattern -->
+    <pattern id="lightDots" x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse">
+      <circle cx="40" cy="40" r="1.2" fill="#a0b8d8" opacity="0.35"/>
+      <circle cx="0" cy="0" r="0.8" fill="#a0b8d8" opacity="0.2"/>
+    </pattern>
+
+    <filter id="softBlur">
+      <feGaussianBlur stdDeviation="50"/>
+    </filter>
+  </defs>
+
+  <!-- Base gradient -->
+  <rect width="1920" height="1080" fill="url(#bgLight)"/>
+
+  <!-- Grid -->
+  <rect width="1920" height="1080" fill="url(#lightGrid)"/>
+
+  <!-- Dot field -->
+  <rect width="1920" height="1080" fill="url(#lightDots)" opacity="0.6"/>
+
+  <!-- Top glow -->
+  <rect width="1920" height="1080" fill="url(#topGlow)"/>
+
+  <!-- Left glow blob -->
+  <rect width="1920" height="1080" fill="url(#leftGlow)"/>
+
+  <!-- ===================== -->
+  <!-- BIG CIRCLE WATERMARK  -->
+  <!-- Top-left (like reference pages) -->
+  <!-- ===================== -->
+  <circle cx="280" cy="280" r="260" fill="none" stroke="#c0d4ee" stroke-width="1.5" opacity="0.7"/>
+  <circle cx="280" cy="280" r="200" fill="none" stroke="#ccdaf0" stroke-width="1" opacity="0.5"/>
+  <circle cx="280" cy="280" r="140" fill="none" stroke="#d4e0f2" stroke-width="0.8" opacity="0.4"/>
+  <!-- Glow version -->
+  <circle cx="280" cy="280" r="260" fill="none" stroke="#a8c4ee" stroke-width="8" opacity="0.08" filter="url(#softBlur)"/>
+
+  <!-- Top-right circle -->
+  <circle cx="1700" cy="200" r="220" fill="none" stroke="#bccee8" stroke-width="1.2" opacity="0.5"/>
+  <circle cx="1700" cy="200" r="160" fill="none" stroke="#c8d8ee" stroke-width="0.8" opacity="0.35"/>
+
+  <!-- ===================== -->
+  <!-- BUILDING WIREFRAMES   -->
+  <!-- Right side, very faint -->
+  <!-- ===================== -->
+  <g opacity="0.25">
+    <!-- Building 1 -->
+    <rect x="1700" y="100" width="90" height="230" fill="none" stroke="#8ab0d8" stroke-width="0.8"/>
+    <line x1="1730" y1="100" x2="1730" y2="330" stroke="#8ab0d8" stroke-width="0.5"/>
+    <line x1="1760" y1="100" x2="1760" y2="330" stroke="#8ab0d8" stroke-width="0.5"/>
+    <line x1="1700" y1="146" x2="1790" y2="146" stroke="#8ab0d8" stroke-width="0.5"/>
+    <line x1="1700" y1="192" x2="1790" y2="192" stroke="#8ab0d8" stroke-width="0.5"/>
+    <line x1="1700" y1="238" x2="1790" y2="238" stroke="#8ab0d8" stroke-width="0.5"/>
+    <line x1="1700" y1="284" x2="1790" y2="284" stroke="#8ab0d8" stroke-width="0.5"/>
+
+    <!-- Building 2 -->
+    <rect x="1600" y="160" width="70" height="170" fill="none" stroke="#8ab0d8" stroke-width="0.8"/>
+    <line x1="1635" y1="160" x2="1635" y2="330" stroke="#8ab0d8" stroke-width="0.5"/>
+    <line x1="1600" y1="202" x2="1670" y2="202" stroke="#8ab0d8" stroke-width="0.5"/>
+    <line x1="1600" y1="244" x2="1670" y2="244" stroke="#8ab0d8" stroke-width="0.5"/>
+    <line x1="1600" y1="286" x2="1670" y2="286" stroke="#8ab0d8" stroke-width="0.5"/>
+
+    <!-- Building 3 -->
+    <rect x="1810" y="140" width="60" height="190" fill="none" stroke="#8ab0d8" stroke-width="0.8"/>
+    <line x1="1840" y1="140" x2="1840" y2="330" stroke="#8ab0d8" stroke-width="0.5"/>
+    <line x1="1810" y1="178" x2="1870" y2="178" stroke="#8ab0d8" stroke-width="0.5"/>
+    <line x1="1810" y1="216" x2="1870" y2="216" stroke="#8ab0d8" stroke-width="0.5"/>
+    <line x1="1810" y1="254" x2="1870" y2="254" stroke="#8ab0d8" stroke-width="0.5"/>
+    <line x1="1810" y1="292" x2="1870" y2="292" stroke="#8ab0d8" stroke-width="0.5"/>
+  </g>
+
+  <!-- ===================== -->
+  <!-- SCATTERED DOTS        -->
+  <!-- ===================== -->
+  <g opacity="0.4">
+    <circle cx="900" cy="50" r="2" fill="#90b0d5"/>
+    <circle cx="1100" cy="80" r="1.5" fill="#90b0d5"/>
+    <circle cx="600" cy="40" r="1.5" fill="#a0b8d8"/>
+    <circle cx="1400" cy="60" r="2" fill="#90b0d5"/>
+    <circle cx="350" cy="520" r="1.5" fill="#a0b8d8"/>
+    <circle cx="1550" cy="600" r="2" fill="#90b0d5"/>
+    <circle cx="100" cy="750" r="1.5" fill="#a0b8d8"/>
+    <circle cx="1800" cy="700" r="2" fill="#90b0d5"/>
+    <circle cx="750" cy="900" r="1.5" fill="#a0b8d8"/>
+    <circle cx="1200" cy="950" r="2" fill="#90b0d5"/>
+  </g>
+
+  <!-- Header separator line (matches nav) -->
+  <line x1="0" y1="68" x2="1920" y2="68" stroke="#c0d0e8" stroke-width="0.5" opacity="0.6"/>
+
+  <!-- Bottom subtle fade -->
+  <linearGradient id="bottomFade" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="80%" style="stop-color:#e8eef9;stop-opacity:0"/>
+    <stop offset="100%" style="stop-color:#dde6f4;stop-opacity:0.8"/>
+  </linearGradient>
+  <rect x="0" y="0" width="1920" height="1080" fill="url(#bottomFade)"/>
+</svg>
